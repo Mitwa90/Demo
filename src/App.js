@@ -19,7 +19,7 @@ export default class App extends Component {
 
   render() {
     return <div style={{ textAlign: "center",color:"brown" }}>
-      <h1><strong>{this.state.date}</strong></h1>
+      <h1><strong>Hritik{this.state.date}</strong></h1>
     </div>;
   }
 }
