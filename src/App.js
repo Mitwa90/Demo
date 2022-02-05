@@ -1,12 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react';
+import moment from 'moment'
+export default class App extends Component {
+  constructor(props) {
+    super(props)
 
-function App() {
-  return (
-    <div className="App">
-         <h1>Hritik Project</h1>
-    </div>
-  );
+    this.state = {
+      date: moment(new Date()).format("hh:mm:ss")
+    }
+  }
+
+  componentDidMount() {
+    setInterval(() => {
+      this.setState({
+        date: moment(new Date()).format("hh:mm:ss")
+      })
+    }, 1000);
+  }
+
+  render() {
+    return <div style={{ textAlign: "center",color:"brown" }}>
+      <h1><strong>{this.state.date}</strong></h1>
+    </div>;
+  }
 }
 
-export default App;
