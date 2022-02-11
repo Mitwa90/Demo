@@ -55,7 +55,7 @@ export default class App extends Component {
             <h5 className=" my-2 my-sm-0">{this.state.date}</h5>
           </form>
         </nav>
-        <marquee behavior="alternate" scrollamount="10"><strong style={{ color: "red" }}> This is my first project which is made by me with the helf of my brother.</strong></marquee><br /><br />
+        <marquee scrollamount="10"><strong style={{ color: "red" }}> This is my first project which is made by me with the helf of my brother.</strong></marquee><br /><br />
         <div style={{ textAlign: "center" }}>
           <input className='form-control-sm' placeholder='Enter Your Number' onKeyDown={(evt) =>
             ["e", "E", "+"].includes(evt.key) && evt.preventDefault()} type="number" onChange={(e) =>
