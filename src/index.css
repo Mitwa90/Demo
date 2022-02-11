@@ -11,3 +11,22 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.tablefordata {
+  text-align: center;
+  color: cyan;
+  min-width:100px;
+  display:inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 50vh;
+}
+
+@media(max-width:600px){
+  .tablefordata {
+    text-align: center;
+    float:none !important;
+  }
+}

@@ -27,8 +27,6 @@ export default class App extends Component {
       abc = num * i
       $(`<div> <strong> ${num} * ${i} = ${abc} </strong> </div>`).appendTo("div#tabledata");
       $('#tabledata').css("border", "1px solid red")
-      $('#tabledata').css("margin-left", "450px")
-      $('#tabledata').css("margin-right", "450px")
       $('#tabledata').css("border-radius", "25px")
       $('#tabledata').css("padding", "5px")
     }
@@ -38,8 +36,6 @@ export default class App extends Component {
     if (prevState.number !== this.state.number) {
       $("#tabledata").empty();
       $('#tabledata').css("border", "")
-      $('#tabledata').css("margin-left", "")
-      $('#tabledata').css("margin-right", "")
       $('#tabledata').css("border-radius", "")
       $('#tabledata').css("padding", "")
       this.getTable(this.state.number)
@@ -69,8 +65,8 @@ export default class App extends Component {
               })
             } />
         </div>  <br />
-        <div style={{ textAlign: "center", color: "green" }}>
-          <div id='tabledata'>
+        <div className='tablefordata'>
+          <div id='tabledata' >
           </div>
         </div>
       </>
